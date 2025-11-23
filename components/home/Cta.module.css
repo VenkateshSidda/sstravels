@@ -1,0 +1,46 @@
+.cta {
+  background: var(--primary);
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.content h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.outlineBtn {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.outlineBtn:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn, .outlineBtn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

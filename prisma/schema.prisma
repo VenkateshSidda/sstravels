@@ -1,0 +1,60 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Admin {
+  id       String @id @default(cuid())
+  username String @unique
+  password String
+}
+
+model Booking {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  email     String?
+  pickup    String
+  drop      String
+  date      String
+  time      String
+  vehicle   String
+  type      String
+  status    String   @default("pending") // pending, confirmed, completed, cancelled
+  createdAt DateTime @default(now())
+}
+
+model Package {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  priceSedan  String
+  priceSuv    String
+  priceLuxury String
+  image       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Fleet {
+  id          String   @id @default(cuid())
+  serviceType String
+  sedanPrice  String
+  suvPrice    String
+  luxuryPrice String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Service {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  icon        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

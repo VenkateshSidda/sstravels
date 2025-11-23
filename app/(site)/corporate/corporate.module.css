@@ -1,0 +1,97 @@
+.hero {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-heading);
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.benefit {
+  text-align: center;
+  padding: 2rem;
+  background: var(--background-alt);
+  border-radius: var(--radius);
+}
+
+.icon {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.benefit h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.clients {
+  background: #f8fafc;
+  padding: 3rem;
+  border-radius: var(--radius);
+  margin-bottom: 4rem;
+}
+
+.clients h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+
+.clientList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.clientList li {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-sm);
+  font-weight: 500;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta h3 {
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}

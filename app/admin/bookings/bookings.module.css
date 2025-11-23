@@ -1,0 +1,76 @@
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-heading);
+}
+
+.tableWrapper {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem;
+  background: #f1f5f9;
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: var(--text-main);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.date, .name, .route {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.time, .phone, .type {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.confirmed {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-light);
+}
